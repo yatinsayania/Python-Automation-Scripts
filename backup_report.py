@@ -151,3 +151,30 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+What it does
+Checks whether backup files or folders exist.
+
+Finds the latest modified file inside a folder.
+
+Flags backups as OK, STALE, SMALL, EMPTY, FAIL, or MISSING.
+
+Supports either direct --paths or a --manifest file.
+
+Can output plain text or JSON.
+
+Example usage
+bash
+python backup_report.py --paths /backups/sapb1 /backups/mysql --max-age-hours 24 --min-size-mb 10
+bash
+python backup_report.py --manifest expected_backups.txt --json
+Suggested repo location
+You can add it under:
+
+scripts/backup_report.py
+
+or directly in the repository root if you prefer simple access
+
+Would you like me to also create a matching expected_backups.txt template and a README section for this script?
+
